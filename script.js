@@ -44,19 +44,16 @@ function addTodo() {
 }
 todoButton.onclick = addTodo;
 
-//Function for deleting ToDos
 function deleteTodo(pos) {
   todos.splice(pos, 1);
   renderTodos();
   saveToStorage();
 }
 
-//Save to storage
 function saveToStorage() {
   localStorage.setItem("list_todos", JSON.stringify(todos));
 }
 
-//Send ToDos with Enter
 todoInput.addEventListener("keyup", (event) => {
   if (event.keyCode === 13) {
     event.preventDefault();
