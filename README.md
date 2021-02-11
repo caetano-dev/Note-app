@@ -1,2 +1,2 @@
-# ToDo-List
-To-Do List app created with Electron Js
+# Note App
+a note app created with Electron Js
