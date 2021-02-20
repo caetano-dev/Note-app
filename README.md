@@ -1,2 +1,2 @@
 # Note App
-a note app created with Electron Js
+A progressive note web app.
