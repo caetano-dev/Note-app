@@ -3,6 +3,10 @@ const todoInput = document.querySelector("#write-todo input");
 const todoButton = document.querySelector("#write-todo button");
 const todos = JSON.parse(localStorage.getItem("list_todos")) || [];
 
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("sw.js")
+}
+
 function renderTodos() {
   todoList.innerHTML = "";
   for (todo of todos) {
